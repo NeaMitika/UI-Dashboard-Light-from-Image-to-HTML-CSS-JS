@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Dasboard Light</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/font-awsome.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <script src="/js/chart.min.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
+
+</head>
+<body>
+    <main>
+
+        <div class="pulsante-toggle-menu animate__animated">
+            <i class="fa-solid fa-bars toggle-menu" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="navigazione animate__animated">
+            <div class="contenitore-toggle-pillola">
+
+                <i class="fa-solid fa-bars toggle-menu" onclick="toggleMenu()"></i>
+
+                <span class="pillola-pro">pro</span>
+
+            </div>
+            
+            <div class="contenitore-avatar">
+                <picture>
+                    <img class="img-profilo" src="/img/avatar.png" alt="">
+                    <span class="stato"></span>
+                </picture>
+                <p>NeaMitika</p>
+            </div>
+
+            <div class="contenitore-c-d">
+                <div class="cellulare">
+                    <div class="nome">Cellulare</div>
+                    <div class="stato">nessuno</div>
+                </div>
+
+                <div class="desktop">
+                    <div class="nome">Desktop</div>
+                    <div class="stato">nessuno</div>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="corrente">
+                        <i class="fa-solid fa-signal icona-navigazione"></i> Dashboard
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-store icona-navigazione"></i> App
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bell icona-navigazione"></i> Notification
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-comments icona-navigazione"></i> Messages
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-server icona-navigazione"></i> Tools
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket icona-navigazione"></i> Sign Out
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="contenuto-centrale">
+
+            <div class="contenitore-app-poplari">
+                
+                <div class="contenitore">
+
+                    <form class="barra-di-ricerca">
+                        <input type="text" name="cerca" id="" placeholder="Costa stai cercando?">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass icona-cerca"></i></button>
+                    </form>
+    
+                    <div class="filtro-ricerca">
+                        <i class="fa-solid fa-filter icona-filtro"></i>
+                    </div>
+    
+                 </div>
+    
+                <div class="app-popolari">
+    
+                    <h2 class="titolo">App Popolari</h2>
+    
+                    <div class="contenitore-lista-app">
+
+                        <div class="app">
+                            <div class="nome-app facebook">Facebook</div>
+                            <div class="tipo-app"><i class="fa-brands fa-android icona"></i>Android</div>
+                            <div class="tempo-app"><b>12.20</b> min</div>
+                            <div class="pulsante-vedi">vedi <i class="fa-solid fa-caret-right icona"></i></div>
+                            
+                        </div>
+
+                        <div class="app">
+
+                            <div class="nome-app instagram">Instagram</div>
+                            <div class="tipo-app"><i class="fa-brands fa-apple icona"></i>iPhone</div>
+                            <div class="tempo-app"><b>12.20</b> min</div>
+                            <div class="pulsante-vedi">vedi <i class="fa-solid fa-caret-right icona"></i></div>
+                            
+                        </div>
+
+                        <div class="app">
+
+                            <div class="nome-app twitter">Twitter</div>
+                            <div class="tipo-app"><i class="fa-brands fa-android icona"></i>Android</div>
+                            <div class="tempo-app"><b>12.20</b> min</div>
+                            <div class="pulsante-vedi">vedi <i class="fa-solid fa-caret-right icona"></i></div>
+                            
+                        </div>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="contenitore-analisi-dati">
+                <div class="contenitore-utenti-attivi">
+
+                    <h3>Utenti attivi</h3>
+
+                    <div class="contenitore-lista-utenti">
+
+                        <div class="contenitore-utente">
+
+                            <img src="/img/avatar/avatar-1.jpg" alt="" class="avatar">
+                            <p class="nome">Luciano M.</p>
+                            <p class="ruolo">UI/UX Design</p>
+
+                        </div>
+
+                        <div class="contenitore-utente">
+
+                            <img src="/img/avatar/avatar-1.jpg" alt="" class="avatar">
+                            <p class="nome">Luciano M.</p>
+                            <p class="ruolo">UI/UX Design</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenitore-grafico">
+
+                    <h3>Grafico</h3>
+
+                    <canvas id="grafico" width="400" height="400"></canvas>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
